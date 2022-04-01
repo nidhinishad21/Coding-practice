@@ -5,17 +5,24 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-       // Add2Num.add2Numbers(2, 1);
-
         MyLinkedList ll = new MyLinkedList();
+        MyLinkedList ll2 = new MyLinkedList();
+
 
         ll.add(1);
         ll.add(2);
-        if(ll.find(3))
-            System.out.println("Elememnt found");
-        //ll.find(2);
+        ll.add(3);
+        ll.add(4);
+        //ll.print();
+       // ll.delete(3);
 
+        ll2.add(5);
+        ll2.add(6);
+        ll2.add(7);
+
+        ll.addLL(ll2.head);
         ll.print();
+
 
     }
 }
